@@ -17,9 +17,9 @@
 
 ## 🧠 What is QuFunding?
 
-**QuFunding** is a fully on-chain, decentralized crowdfunding platform built with **C++** as a smart contract on the **Qubic network**. It empowers creators and innovators to raise capital for their projects in a **trustless**, **transparent**, and **automated** way.
+**QuFunding** is a fully on chain, decentralized crowdfunding platform built with **C++** as a smart contract on the **Qubic network**. It empowers creators and innovators to raise capital for their projects in a **trustless**, **transparent**, and **automated** way.
 
-> 💡 More than just crowdfunding — it’s a **tokenized DAO** with **built-in deflationary economics** and **dividend payouts**.
+> 💡 More than just crowdfunding — it’s a **tokenized DAO** with **built in deflationary economics** and **dividend payouts**.
 
 ---
 
@@ -30,7 +30,7 @@ QuFunding operates as a **Decentralized Autonomous Organization (DAO)** and feat
 - **Dividends** from platform fees 💰
 - **Deflationary gains** from automatic share burns 🔥
 
-This creates a self-sustaining economy that rewards participation and long-term support.
+This creates a self sustaining economy that rewards participation and long term support.
 
 ---
 
@@ -49,7 +49,7 @@ This creates a self-sustaining economy that rewards participation and long-term 
 | **Decentralized Crowdfunding** | Transparent, automated capital raising without middlemen. |
 | **DAO & IPO Model**            | Shareholders own and govern the platform. |
 | **Deflationary Share Burn**    | Reduces supply, increasing value of remaining shares. |
-| **Automated, Secure Payouts**  | No counterparty risk—smart contract guarantees fund logic. |
+| **Automated, Secure Payouts**  | No counterparty. Risk smart contract guarantees fund logic. |
 | **Governance Ready**           | Shareholders can vote on future upgrades and fee structures. |
 
 ---

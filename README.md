@@ -44,9 +44,9 @@ This creates a self-sustaining economy that rewards participation and long-term 
 
 ---
 
-## 🌟 Core Features & Ecosystem Benefits
+##   Core Features & Ecosystem Benefits
 
-| 🚀 **Feature**               | 🌱 **Benefit for Qubic Ecosystem** |
+|   **Feature**               | 🌱 **Benefit for Qubic Ecosystem** |
 |-----------------------------|------------------------------------|
 | **Decentralized Crowdfunding** | Transparent, automated capital raising without middlemen. |
 | **DAO & IPO Model**            | Shareholders own and govern the platform. |
@@ -56,30 +56,10 @@ This creates a self-sustaining economy that rewards participation and long-term 
 
 ---
 
-## ✅ Prerequisites
+##  Prerequisites
 
 - 🔐 A Qubic Wallet to interact with the platform.
 - 📘 Basic knowledge of smart contracts and blockchain fundamentals.
 
 ---
 
-## 🧬 Under the Hood: Contract Code Snippet
-
-The smart contract is written in **C++** and contains all platform logic. Here's a peek at the `ContractState` structure:
-
-```cpp
-struct ContractState {
-    bool isInitialized;
-    uint8_t owner;
-    long long ipoEndEpoch;
-    long long ipoSharePrice;
-    long long creationFee;
-    Shareholder shareholders[MAX_SHAREHOLDERS];
-    uint16_t shareholderCount;
-    long long totalSharesIssued;
-    long long cumulativeRevenuePerShare;
-    long long treasury; // Holds funds for dividends
-    Campaign campaigns[MAX_CAMPAIGNS];
-    uint16_t campaignCount;
-    long long totalSharesBurned; // Tracks burned shares
-};

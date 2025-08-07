@@ -2,11 +2,16 @@
   <tr>
     <td><h1> QuFunding: Decentralized Crowdfunding on Qubic</h1></td>
     <td align="right">
-      <img src="https://github.com/user-attachments/assets/f1feeab8-6c46-4339-b148-05cfc8372709" alt="Qubic" width="70" height="70"/>
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="60" height="60"/"
-    </td>
+      <img src="https://github.com/user-attachments/assets/f1feeab8-6c46-4339-b148-05cfc8372709" alt="Qubic" width="60" height="60"/>
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="60" height="60"/>
+      <img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/d09ca5dc-1095-4027-95e6-f715102d9161"/>
+    </td> 
   </tr>
 </table>
+
+
+
+
 
 ![Crypto Animation](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
 

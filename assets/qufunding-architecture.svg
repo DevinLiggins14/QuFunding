@@ -1,49 +1,52 @@
 <svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg" style="background-color:#0D1117; color: #c9d1d9; font-family: sans-serif;">
-    <!-- Main Title -->
-    <text x="400" y="40" font-size="24" font-weight="bold" fill="#58a6ff" text-anchor="middle">QuFunding Architecture &amp; Fund Flow</text>
+  <!-- Main Title -->
+  <text x="400" y="40" font-size="24" font-weight="bold" fill="#58a6ff" text-anchor="middle">QuFunding Architecture &amp; Fund Flow</text>
 
-    <!-- Boxes -->
-    <rect x="50" y="100" width="150" height="60" rx="10" stroke="#30363d" fill="#161b22" stroke-width="2"/>
-    <text x="125" y="135" text-anchor="middle" fill="#c9d1d9">1. User / Creator</text>
+  <!-- User / Creator -->
+  <rect x="50" y="100" width="150" height="60" rx="10" stroke="#30363d" fill="#161b22" stroke-width="2"/>
+  <text x="125" y="135" font-size="14" text-anchor="middle" fill="#c9d1d9">1. User / Creator</text>
 
-    <!-- Smaller Smart Contract Block -->
-    <rect x="325" y="100" width="150" height="180" rx="10" stroke="#30363d" fill="#161b22" stroke-width="2"/>
-    <text x="400" y="120" text-anchor="middle" font-size="10" font-weight="bold" fill="#c9d1d9">QuFunding Smart Contract</text>
-    <line x1="335" y1="132" x2="465" y2="132" stroke="#30363d"/>
-    <text x="400" y="148" text-anchor="middle" font-size="10" fill="#c9d1d9">IPO Module</text>
-    <text x="400" y="168" text-anchor="middle" font-size="10" fill="#c9d1d9">Campaign Module</text>
-    <text x="400" y="188" text-anchor="middle" font-size="10" fill="#c9d1d9">Fee Engine</text>
-    <text x="400" y="208" text-anchor="middle" font-size="10" fill="#c9d1d9">Dividend Treasury</text>
+  <!-- Smart Contract Block (scaled up, still fits nicely) -->
+  <rect x="325" y="100" width="150" height="200" rx="10" stroke="#30363d" fill="#161b22" stroke-width="2"/>
+  <text x="400" y="120" text-anchor="middle" font-size="12" font-weight="bold" fill="#c9d1d9">QuFunding Smart Contract</text>
+  <line x1="335" y1="132" x2="465" y2="132" stroke="#30363d"/>
+  <text x="400" y="150" text-anchor="middle" font-size="12" fill="#c9d1d9">IPO Module</text>
+  <text x="400" y="170" text-anchor="middle" font-size="12" fill="#c9d1d9">Campaign Module</text>
+  <text x="400" y="190" text-anchor="middle" font-size="12" fill="#c9d1d9">Fee Engine</text>
+  <text x="400" y="210" text-anchor="middle" font-size="12" fill="#c9d1d9">Dividend Treasury</text>
 
-    <rect x="600" y="100" width="150" height="60" rx="10" stroke="#30363d" fill="#161b22" stroke-width="2"/>
-    <text x="675" y="135" text-anchor="middle" fill="#c9d1d9">2. Project Goal</text>
+  <!-- Project Goal -->
+  <rect x="600" y="100" width="150" height="60" rx="10" stroke="#30363d" fill="#161b22" stroke-width="2"/>
+  <text x="675" y="135" font-size="14" text-anchor="middle" fill="#c9d1d9">2. Project Goal</text>
 
-    <rect x="600" y="290" width="150" height="60" rx="10" stroke="#30363d" fill="#161b22" stroke-width="2"/>
-    <text x="675" y="325" text-anchor="middle" fill="#c9d1d9">3. Backers / Investors</text>
+  <!-- Backers -->
+  <rect x="600" y="290" width="150" height="60" rx="10" stroke="#30363d" fill="#161b22" stroke-width="2"/>
+  <text x="675" y="325" font-size="14" text-anchor="middle" fill="#c9d1d9">3. Backers / Investors</text>
 
-    <!-- Arrows -->
-    <defs>
-        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
-            <polygon points="0 0, 10 3.5, 0 7" fill="#8b949e"/>
-        </marker>
-    </defs>
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b949e"/>
+    </marker>
+  </defs>
 
-    <!-- Arrow 1: User -> Contract -->
-    <path d="M 205,130 C 250,130 280,130 320,130" stroke="#8b949e" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
-    <text x="262.5" y="120" font-size="12" text-anchor="middle" fill="#8b949e">Create Campaign</text>
+  <!-- User -> Contract -->
+  <path d="M 205,130 C 250,130 280,130 320,130" stroke="#8b949e" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="262.5" y="120" font-size="12" text-anchor="middle" fill="#8b949e">Create Campaign</text>
 
-    <!-- Arrow 2: Contract -> Goal -->
-    <path d="M 480,130 C 520,130 550,130 595,130" stroke="#8b949e" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
-    <text x="537.5" y="120" font-size="12" text-anchor="middle" fill="#8b949e">Funds Locked</text>
+  <!-- Contract -> Goal -->
+  <path d="M 480,130 C 520,130 550,130 595,130" stroke="#8b949e" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="537.5" y="120" font-size="12" text-anchor="middle" fill="#8b949e">Funds Locked</text>
 
-    <!-- Arrow 3: Backers -> Contract -->
-    <path d="M 595,320 C 550,320 520,320 480,320" stroke="#8b949e" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
-    <text x="537.5" y="310" font-size="12" text-anchor="middle" fill="#8b949e">Contribute Funds</text>
+  <!-- Backers -> Contract -->
+  <path d="M 595,320 C 550,320 520,320 480,320" stroke="#8b949e" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="537.5" y="310" font-size="12" text-anchor="middle" fill="#8b949e">Contribute Funds</text>
 
-    <!-- Arrow 4: Success/Fail Logic -->
-    <path d="M 400,280 V 380 H 125 V 165" stroke="#2da44e" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
-    <text x="250" y="395" font-size="12" text-anchor="middle" fill="#2da44e">On Success -> Release Funds</text>
+  <!-- Success Logic -->
+  <path d="M 400,305 V 380 H 125 V 165" stroke="#2da44e" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="250" y="395" font-size="12" text-anchor="middle" fill="#2da44e">On Success -> Release Funds</text>
 
-    <path d="M 400,280 V 380 H 675 V 355" stroke="#f85149" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
-    <text x="537.5" y="395" font-size="12" text-anchor="middle" fill="#f85149">On Failure -> Refund Backers</text>
+  <!-- Failure Logic (Fixed to point RIGHT from contract to backers) -->
+  <path d="M 400,305 V 340 H 675 V 355" stroke="#f85149" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="537.5" y="370" font-size="12" text-anchor="middle" fill="#f85149">On Failure -> Refund Backers</text>
 </svg>

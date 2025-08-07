@@ -6,13 +6,14 @@
     <rect x="50" y="100" width="150" height="60" rx="10" stroke="#30363d" fill="#161b22" stroke-width="2"/>
     <text x="125" y="135" text-anchor="middle" fill="#c9d1d9">1. User / Creator</text>
 
-    <rect x="325" y="100" width="150" height="250" rx="10" stroke="#30363d" fill="#161b22" stroke-width="2"/>
-    <text x="400" y="125" text-anchor="middle" font-weight="bold" fill="#c9d1d9">QuFunding Smart Contract</text>
-    <line x1="335" y1="140" x2="465" y2="140" stroke="#30363d"/>
-    <text x="400" y="165" text-anchor="middle" fill="#c9d1d9">IPO Module</text>
-    <text x="400" y="215" text-anchor="middle" fill="#c9d1d9">Campaign Module</text>
-    <text x="400" y="265" text-anchor="middle" fill="#c9d1d9">Fee Engine</text>
-    <text x="400" y="315" text-anchor="middle" fill="#c9d1d9">Dividend Treasury</text>
+    <!-- Smaller Smart Contract Block -->
+    <rect x="325" y="100" width="150" height="180" rx="10" stroke="#30363d" fill="#161b22" stroke-width="2"/>
+    <text x="400" y="120" text-anchor="middle" font-size="10" font-weight="bold" fill="#c9d1d9">QuFunding Smart Contract</text>
+    <line x1="335" y1="132" x2="465" y2="132" stroke="#30363d"/>
+    <text x="400" y="148" text-anchor="middle" font-size="10" fill="#c9d1d9">IPO Module</text>
+    <text x="400" y="168" text-anchor="middle" font-size="10" fill="#c9d1d9">Campaign Module</text>
+    <text x="400" y="188" text-anchor="middle" font-size="10" fill="#c9d1d9">Fee Engine</text>
+    <text x="400" y="208" text-anchor="middle" font-size="10" fill="#c9d1d9">Dividend Treasury</text>
 
     <rect x="600" y="100" width="150" height="60" rx="10" stroke="#30363d" fill="#161b22" stroke-width="2"/>
     <text x="675" y="135" text-anchor="middle" fill="#c9d1d9">2. Project Goal</text>
@@ -40,9 +41,9 @@
     <text x="537.5" y="310" font-size="12" text-anchor="middle" fill="#8b949e">Contribute Funds</text>
 
     <!-- Arrow 4: Success/Fail Logic -->
-    <path d="M 400,355 V 380 H 125 V 165" stroke="#2da44e" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 400,280 V 380 H 125 V 165" stroke="#2da44e" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
     <text x="250" y="395" font-size="12" text-anchor="middle" fill="#2da44e">On Success -> Release Funds</text>
 
-    <path d="M 400,355 V 380 H 675 V 355" stroke="#f85149" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M 400,280 V 380 H 675 V 355" stroke="#f85149" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
     <text x="537.5" y="395" font-size="12" text-anchor="middle" fill="#f85149">On Failure -> Refund Backers</text>
 </svg>

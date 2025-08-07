@@ -1,0 +1,102 @@
+<svg width="100%" viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="14px">
+    <style>
+        .box { stroke: #333; stroke-width: 1.5; fill: #f9f9f9; rx: 5; }
+        .actor { fill: #e1f5fe; stroke: #0288d1; }
+        .process { fill: #e8f5e9; stroke: #388e3c; }
+        .decision { fill: #fff3e0; stroke: #f57c00; }
+        .outcome { fill: #fce4ec; stroke: #d81b60; }
+        .arrow { marker-end: url(#arrowhead); stroke: #333; stroke-width: 1.5; fill: none; }
+        .arrow-qubic { stroke: #00AEEF; }
+        .arrow-share { stroke: #d81b60; }
+        .arrow-fee { stroke: #f57c00; }
+        .text { fill: #111; }
+        .text-white { fill: #fff; }
+        .text-small { font-size: 12px; }
+        .title { font-size: 20px; font-weight: bold; }
+    </style>
+    <defs>
+        <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
+        </marker>
+    </defs>
+
+    <!-- Titles -->
+    <text x="150" y="40" class="title" text-anchor="middle">Phase 1: Platform IPO</text>
+    <text x="650" y="40" class="title" text-anchor="middle">Phase 2: Campaign Lifecycle</text>
+    <text x="1050" y="400" class="title" text-anchor="middle">Phase 3: Fee Engine</text>
+
+    <!-- Phase 1: IPO -->
+    <rect x="50" y="100" width="200" height="60" class="box actor" />
+    <text x="150" y="135" text-anchor="middle">Investor</text>
+    <rect x="50" y="220" width="200" height="60" class="box process" />
+    <text x="150" y="255" text-anchor="middle">QuFunding Contract</text>
+    <path class="arrow arrow-qubic" d="M 150 160 v 60" />
+    <text x="160" y="200" class="text text-small">Sends QUBIC</text>
+    <path class="arrow arrow-share" d="M 150 280 v 60" />
+    <text x="160" y="320" class="text text-small">Receives Shares</text>
+    <rect x="50" y="340" width="200" height="60" class="box outcome" />
+    <text x="150" y="375" text-anchor="middle">Becomes Shareholder</text>
+
+    <!-- Phase 2: Campaign -->
+    <rect x="350" y="100" width="150" height="50" class="box actor" />
+    <text x="425" y="130" text-anchor="middle">Creator</text>
+    <rect x="575" y="100" width="150" height="50" class="box actor" />
+    <text x="650" y="130" text-anchor="middle">Backer</text>
+    <rect x="450" y="200" width="200" height="60" class="box process" />
+    <text x="550" y="235" text-anchor="middle">Create Campaign</text>
+    <path class="arrow arrow-fee" d="M 425 150 v 50" />
+    <text x="365" y="185" class="text text-small">Pays Fee</text>
+    <path class="arrow arrow-qubic" d="M 650 150 c 0 50, -100 50, -100 50" />
+    <text x="660" y="185" class="text text-small">Contributes QUBIC</text>
+
+    <rect x="450" y="300" width="200" height="60" class="box decision" />
+    <text x="550" y="335" text-anchor="middle">Finalize Campaign</text>
+    <path class="arrow" d="M 550 260 v 40" />
+    <text x="560" y="290" class="text text-small">Epoch Ends</text>
+
+    <path class="arrow" d="M 550 360 v 50" />
+    <text x="560" y="395" class="text text-small">Goal Met?</text>
+
+    <!-- Outcomes -->
+    <rect x="350" y="440" width="150" height="80" class="box outcome" />
+    <text x="425" y="470" text-anchor="middle">SUCCESS</text>
+    <text x="425" y="490" class="text text-small">Funds to Beneficiary</text>
+    <text x="425" y="505" class="text text-small">Fee to Engine</text>
+    <rect x="600" y="440" width="150" height="80" class="box outcome" />
+    <text x="675" y="470" text-anchor="middle">FAILURE</text>
+    <text x="675" y="490" class="text text-small">Refunds to Backers</text>
+    <text x="675" y="505" class="text text-small">Fee to Engine</text>
+
+    <path class="arrow" d="M 475 410 h -50 v 30" />
+    <text x="400" y="430" class="text text-small">Yes</text>
+    <path class="arrow" d="M 625 410 h 50 v 30" />
+    <text x="685" y="430" class="text text-small">No</text>
+
+    <!-- Phase 3: Fee Engine -->
+    <rect x="850" y="440" width="400" height="250" class="box" style="fill: #eee;"/>
+    <rect x="950" y="450" width="200" height="60" class="box process" />
+    <text x="1050" y="485" text-anchor="middle">Process Platform Fee</text>
+    <path class="arrow arrow-fee" d="M 750 480 h 200" />
+    <path class="arrow arrow-fee" d="M 500 480 h 450" />
+
+    <path class="arrow" d="M 1050 510 v 40" />
+    <text x="1060" y="540" class="text text-small">Split Fee (e.g., 50/50)</text>
+
+    <!-- Burn Path -->
+    <rect x="875" y="580" width="150" height="100" class="box" style="fill:#fffbe6; stroke:#fdd835;">
+        <title>A portion of fees is used to buy back and burn shares, reducing total supply and increasing the value of remaining shares.</title>
+    </rect>
+    <text x="950" y="610" text-anchor="middle" font-weight="bold">Burn Engine</text>
+    <text x="950" y="635" text-anchor="middle" class="text-small">Buy Back & Burn Shares</text>
+    <text x="950" y="655" text-anchor="middle" class="text-small">⬇️ Total Supply</text>
+    <path class="arrow" d="M 1050 550 c -50 0, -75 30, -75 30" />
+
+    <!-- Dividend Path -->
+    <rect x="1125" y="580" width="150" height="100" class="box" style="fill:#e0f2f1; stroke:#00897b;">
+        <title>The remaining fees are added to a treasury, and their value is distributed proportionally to all shareholders as dividends.</title>
+    </rect>
+    <text x="1200" y="610" text-anchor="middle" font-weight="bold">Dividend Treasury</text>
+    <text x="1200" y="635" text-anchor="middle" class="text-small">Distribute to Shareholders</text>
+    <text x="1200" y="655" text-anchor="middle" class="text-small"> passive income</text>
+    <path class="arrow" d="M 1050 550 c 50 0, 75 30, 75 30" />
+</svg>

@@ -9,11 +9,9 @@
   </tr>
 </table>
 
+<img src="https://cdn.dribbble.com/userupload/22575841/file/original-1f34d20cfecddbf083d889e33d4a9fb9.gif" alt="Blockchain Smart Contract" width="400"/>
 
 
-
-
-![Crypto Animation](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
 
 ---
 

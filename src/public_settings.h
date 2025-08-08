@@ -1,1 +1,1 @@
-constexpr int EPOCH = 0;
+#define EPOCH 0
